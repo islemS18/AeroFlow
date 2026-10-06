@@ -40,12 +40,13 @@ The main objectives of AeroFlow are to:
 6. Provide a clear dashboard for operational monitoring
 
 ---
+```text
 
 ## Data Pipeline
 
 The project follows a simple data analytics pipeline:
 
-text
+
 Raw data
    │
    ├── Production data
@@ -69,13 +70,14 @@ Performance monitoring
 
 
 
-
+```
 
 The project therefore covers the main stages of a small Data Analytics workflow:
+```text
 
 data generation → data processing → KPI calculation → visualization → performance analysis
-
-Manufacturing Scenario
+```
+## Manufacturing Scenario
 
 The project simulates a fictional industrial manufacturing environment with three production lines:
 
@@ -90,34 +92,31 @@ A330
 A350
 
 The product names are used only to create an aerospace-inspired manufacturing scenario.
-
 They do not represent real Airbus production data.
-
 Simulated performance degradation
 
-To demonstrate the monitoring capabilities of the dashboard, a controlled performance degradation is introduced on LINE_B after March 20, 2027.
+=> To demonstrate the monitoring capabilities of the dashboard, a controlled performance degradation is introduced on LINE_B after March 20, 2027.
 
 During this period:
 
-Production achievement decreases
-Cycle time increases
-Defect rate increases
-Production delays increase
+-Production achievement decreases
+-Cycle time increases
+-Defect rate increases
+-Production delays increase
 
-The purpose is to simulate a situation where several operational indicators begin to deteriorate.
+=> The purpose is to simulate a situation where several operational indicators begin to deteriorate.
 
 AeroFlow can then make this degradation visible through its KPIs and visualizations.
 
-Key Performance Indicators
+## Key Performance Indicators
 
 AeroFlow calculates several KPIs to monitor production performance.
-
+```text
 Production Achievement
 
 Measures actual production compared with the production target.
 
-Production Achievement =
-Units Produced / Target Units × 100
+Production Achievement = Units Produced / Target Units × 100
 
 A value close to 100% means that the production target is being achieved.
 
@@ -217,8 +216,8 @@ All production lines
 March 20 → March 30
 
 This can help investigate a specific period or production line.
-
-Technologies
+```
+## Technologies
 Programming & Data Analytics
 Python
 Pandas
@@ -233,7 +232,10 @@ Development Tools
 Visual Studio Code
 Git
 GitHub
-Project Structure
+
+
+## Project Structure
+```text
 AeroFlow/
 │
 ├── data/
@@ -255,7 +257,9 @@ AeroFlow/
 └── .gitignore
 data/
 
+
 Contains the datasets used by the project.
+
 
 production.csv — production volumes, targets and cycle time
 quality.csv — inspected units, defective units and rework
@@ -274,9 +278,9 @@ app.py — main dashboard application
 notebooks/
 
 Reserved for exploratory data analysis and future experimentation.
-
-*Installation
-
+```
+## Installation
+```text
 1. Clone the repository
 
 git clone https://github.com/YOUR_USERNAME/AeroFlow.git
@@ -361,8 +365,9 @@ Delays                  → ↑
 The dashboard makes these changes visible through the different KPIs and charts.
 
 The purpose is to demonstrate how a dashboard can help an operational team identify a potential performance issue and decide where further investigation may be needed.
+```
 
-Synthetic Data
+## Synthetic Data
 
 All data used in AeroFlow is synthetic.
 
@@ -383,15 +388,16 @@ No confidential or proprietary industrial data is used.
 
 In particular, this project does not use:
 
-SAP data
-Airbus production data
-Skywise data
-Palantir Foundry data
-Confidential company information
-
+```text
+-SAP data
+-Airbus production data
+-Skywise data
+-Palantir Foundry data
+-Confidential company information
+```
 The aerospace-inspired context is purely illustrative.
 
-*Why Synthetic Data?
+Why Synthetic Data?
 
 Real industrial datasets are often confidential and cannot be publicly shared.
 
@@ -406,7 +412,7 @@ Using synthetic data makes it possible to:
 
 The goal of the project is therefore to demonstrate the Data Analytics workflow and dashboard architecture, rather than to reproduce the performance of a real manufacturing company.
 
-Future Improvements
+## Future Improvements
 
 Possible future developments include:
 
@@ -446,7 +452,7 @@ Project Context
 
 AeroFlow was developed as a personal portfolio project to explore the application of Data Analytics to industrial performance monitoring.
 
-
+```text
 The project is particularly interested in the following workflow:
 
 Raw operational data
@@ -461,15 +467,13 @@ Performance monitoring
         ↓
 Decision support
 
-
+```
 
 The project is not intended to reproduce a real company's internal systems.
 
 
-Author : Islem Souissi - L3 MIAGE - Université Côte d'Azur
-
-
-
+## Author : 
+Islem Souissi - L3 MIAGE - Université Côte d'Azur
 
 
 This project is intended for educational and portfolio purposes.
