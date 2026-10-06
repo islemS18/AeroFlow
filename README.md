@@ -45,7 +45,7 @@ The main objectives of AeroFlow are to:
 
 The project follows a simple data analytics pipeline:
 
-```text
+text
 Raw data
    │
    ├── Production data
