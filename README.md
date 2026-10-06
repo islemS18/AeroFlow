@@ -250,7 +250,6 @@ AeroFlow/
 ├── dashboard/
 │   └── app.py
 │
-├── notebooks/
 │
 ├── README.md
 ├── requirements.txt
@@ -375,14 +374,14 @@ The datasets were generated with Python specifically for this project.
 
 The synthetic data was designed to reproduce a simplified manufacturing scenario containing:
 
-Production targets
-Actual production
-Quality inspections
-Defective units
-Rework
-Production planning
-Cycle time
-Production delays
+-Production targets
+-Actual production
+-Quality inspections
+-Defective units
+-Rework
+-Production planning
+-Cycle time
+-Production delays
 
 No confidential or proprietary industrial data is used.
 
